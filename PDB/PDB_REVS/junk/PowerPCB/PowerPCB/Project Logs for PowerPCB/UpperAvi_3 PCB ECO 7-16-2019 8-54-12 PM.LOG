@@ -1,0 +1,4 @@
+Change Component Footprint: Designator=C1 Old Footprint=C0805 New Footprint=POLAR0.8
+Change Component Footprint: Designator=C3 Old Footprint=C0805 New Footprint=POLAR0.8
+Change Component Footprint: Designator=C7 Old Footprint=C0805 New Footprint=POLAR0.8
+Added Room: Name=UpperAviPowerSchem

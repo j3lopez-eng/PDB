@@ -1,0 +1,10 @@
+UTTY- hostname : ieng6.ucsd.edu
+
+lab directory:
+C:\Users\xxjac\source\repos\Homework\Homework
+
+user: ee15fbz 
+
+host name: ieng6.ucsd.edu
+
+supe secret code: 4342

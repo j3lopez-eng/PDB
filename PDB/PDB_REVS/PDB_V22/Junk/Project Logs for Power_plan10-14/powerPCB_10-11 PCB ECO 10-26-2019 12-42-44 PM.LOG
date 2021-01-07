@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=NC_relay Pin=Battery Power-2
+Added Pin To Net: NetName=NetBattery Power_2 Pin=Battery Power-2
+Change Net Name : Old Net Name=NetBattery Power_2 New Net Name=BATTPOS
+Change Net Name : Old Net Name=NetF2_1 New Net Name=GPOS
+Added Room: Name=MainSchem
+Added Room: Name=U_Switching

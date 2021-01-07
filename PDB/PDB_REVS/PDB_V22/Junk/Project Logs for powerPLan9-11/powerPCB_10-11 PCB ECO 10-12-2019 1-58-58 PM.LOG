@@ -1,0 +1,27 @@
+Removed Pin From Net: NetName=GND Pin=J8-1
+Removed Pin From Net: NetName=Toggle Pin=J8-2
+Removed Member From Class: ClassName=MainSchem Member=J8
+Change Component Designator: OldDesignator=24VOUT NewDesignator=J2
+Change Component Designator: OldDesignator=BASE NewDesignator=J6
+Change Component Designator: OldDesignator=BAT NewDesignator=J3
+Change Component Designator: OldDesignator=FROM NewDesignator=J5
+Change Component Designator: OldDesignator=TO NewDesignator=J1
+Added Component: Designator=PS1(R78C1210)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Allied_Number"; Value = "70425118"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Allied Price/Stock"; Value = "https://www.alliedelec.com/recompower-inc-r-78c12-1-0/70425118/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://recom-power.com/pdf/Innoline/R-78C-1.0.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "10.4mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "RECOM Power"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "R-78C12-1.0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "919-R-78C12-1.0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.com/Search/Refine.aspx?Keyword=919-R-78C12-1.0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RS Part Number"; Value = "7398304P"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RS Price/Stock"; Value = "http://uk.rs-online.com/web/p/products/7398304P"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NO_relay Pin=PS1-1
+Added Pin To Net: NetName=GND Pin=PS1-2
+Added Pin To Net: NetName=Toggle Pin=PS1-3
+Added Member To Class: ClassName=MainSchem Member=Component J7 66200211122
+Added Member To Class: ClassName=MainSchem Member=Component PS1 R-78C12-1.0
+Added Room: Name=MainSchem
+Added Room: Name=U_Switching

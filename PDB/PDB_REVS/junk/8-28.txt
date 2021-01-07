@@ -1,0 +1,4 @@
+give trevor regs on power board
+mosfet math
+code for hotfire
+XT60 connector

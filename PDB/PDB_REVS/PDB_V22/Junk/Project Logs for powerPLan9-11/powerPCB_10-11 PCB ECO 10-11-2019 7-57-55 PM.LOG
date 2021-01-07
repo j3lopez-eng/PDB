@@ -1,0 +1,7 @@
+Removed Pin From Net: NetName=OUT Pin=K1-2
+Removed Pin From Net: NetName=NO_relay Pin=K1-4
+Added Pin To Net: NetName=NO_relay Pin=K1-6
+Added Pin To Net: NetName=OUT Pin=K1-8
+Added Member To Class: ClassName=MainSchem Member=Component J4 66200211122
+Added Room: Name=MainSchem
+Added Room: Name=U_Switching

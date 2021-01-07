@@ -1,0 +1,21 @@
+Removed Pin From Net: NetName=GND Pin=P2-1
+Removed Pin From Net: NetName=GND Pin=U2-1
+Change Component Description : Designator=C1 Old Description=0603 0.1 uF 50 V ±10 % Tolerance X7R SMT Multilayer Ceramic Capacitor New Description=
+0603 0.1 uF 50 V ±10 % Tolerance X7R SMT Multilayer Ceramic Capacitor
+
+Change Component Description : Designator=C3 Old Description=0603 0.1 uF 50 V ±10 % Tolerance X7R SMT Multilayer Ceramic Capacitor New Description=
+0603 0.1 uF 50 V ±10 % Tolerance X7R SMT Multilayer Ceramic Capacitor
+
+Change Component Description : Designator=C4 Old Description=0603 0.1 uF 50 V ±10 % Tolerance X7R SMT Multilayer Ceramic Capacitor New Description=
+0603 0.1 uF 50 V ±10 % Tolerance X7R SMT Multilayer Ceramic Capacitor
+
+Change Component Description : Designator=C5 Old Description=0603 0.1 uF 50 V ±10 % Tolerance X7R SMT Multilayer Ceramic Capacitor New Description=
+0603 0.1 uF 50 V ±10 % Tolerance X7R SMT Multilayer Ceramic Capacitor
+
+Change Component Description : Designator=C6 Old Description=0603 0.1 uF 50 V ±10 % Tolerance X7R SMT Multilayer Ceramic Capacitor New Description=
+0603 0.1 uF 50 V ±10 % Tolerance X7R SMT Multilayer Ceramic Capacitor
+
+Added Pin To Net: NetName=NetP2_1 Pin=P2-1
+Added Pin To Net: NetName=NetP2_1 Pin=U2-1
+Change Net Name : Old Net Name=NetC3_1 New Net Name=NetC2_1
+Added Room: Name=UpperAviPowerSchem

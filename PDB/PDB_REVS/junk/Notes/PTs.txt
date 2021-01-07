@@ -1,0 +1,53 @@
+non-cryo: 
+
+Manufacturer:	OMEGA
+Manufacturer Part No:	PX309-1KG5V
+https://www.newark.com/omega/px309-1kg5v/pressure-sensor-analogue-1000psi/dp/30AC8131
+-1000psi gauge max
+-excitation of 9 to 30Vdc (<10mA)
+- 0 to 5VDC output
+
+Manufacturer:	OMEGA
+Manufacturer Part No:	PX429 and PX449 Sealed Gage Series
+https://www.omega.com/pptst/PX429-SG5V.html
+-5000psi gauge max
+-0 to 5 Vdc output when 10 to 30 Vdc input @10 mA
+
+Mouser:
+Mouser#: M3041-000006-01KPG
+Mfr.#: M3041-000006-01KPG
+https://www.mouser.com/ProductDetail/Measurement-Specialties/M3041-000006-01KPG?qs=sGAEpiMZZMvhQj7WZhFIAAozoDJBa%2Fn6wj4penyEhw0%3D
+
+cryo: 
+
+GP:50
+model: 7720
+https://www.gp50.com/product/model-7720-cryogenic-pressure-transducer/
+-Ranges 0 to 150 thru 0 to 5K PSIA or PSISG (10 thru 207 BAR) (exactly written on webpage)
+- construction with choice of either 4-20 mA, 0 to 5 Vdc, or 0 to 10 Vdc output;
+
+Manufacturer: PCB PIEZOTRONICS
+Model: 102A14
+http://www.pcb.com/products.aspx?m=102A14
+output 0-5
+range: 0-5000psi
+
+
+
+10K psi or greater
+
+model:PX01-5V
+https://www.omega.com/pptst/PX01-5V.html
+max PSI 30K
+0-5V output
+
+M3031-000005-10KPG
+https://www.mouser.com/ProductDetail/Measurement-Specialties/M3031-000005-10KPG?qs=6mErgoZBfVIodfSpkT4ApQ%3D%3D
+range: 0- 10K
+output 500mV to 4.5V
+
+TE Model #  AST4700
+TE Internal #:  CAT-PTT0058
+https://www.te.com/usa-en/product-CAT-PTT0058.html#mdp-tabs-content
+Pressure Range?: 0 – 25 to 10000 psi
+Output/Span?: 0 – 10 V, 0 – 10 V, 0 – 5 V, 1 – 6 kHz

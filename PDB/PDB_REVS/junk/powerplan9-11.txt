@@ -1,0 +1,19 @@
+3.3Vreg
+https://www.digikey.com/product-detail/en/traco-power/TSR-2-2433/1951-2426-ND/9383461
+
+12Vreg
+https://www.digikey.com/product-detail/en/traco-power/TSR-2-24120/1951-2612-ND/9383646
+
+
+batteries:
+https://www.hobbyzone.com/batteries/lipo/EFLB40004S30.html
+
+EC3 connector
+https://www.motionrc.com/products/ec3-connectors-pair?gclid=CjwKCAjwtuLrBRAlEiwAPVcZBvRdxUR_KEqLkB6X7Ryxg4kiNds4Bej_9DTwKC0J93vh5HRqhy5UtRoC9EAQAvD_BwE
+
+24V 15A reg
+https://www.amazon.com/Waterproof-Converter-Automatic-Regulator-Transformer/dp/B072L7FTN8
+
+connector list:
+2pin
+https://vetco.net/products/jst-ph-2-pin-connector-male-female-pair---pre-wired-6-inch?gclid=CjwKCAjwtuLrBRAlEiwAPVcZBiSb4NGLCAieh1JAGz1ndL2rDlFDhksSpWV28v6BZl-jJ13p1S2suRoChl4QAvD_BwE

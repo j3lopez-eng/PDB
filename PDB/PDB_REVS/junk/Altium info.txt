@@ -1,0 +1,6 @@
+the "Repeat()" function
+https://www.altium.com/documentation/18.0/display/ADES/Sch_Obj-SheetSymbol((Sheet+Symbol))_AD
+
+By using sheet symbol instantiation, multiple channels on the same sub-sheet can be referenced from a single sheet symbol. The syntax used involves the use of the Repeat keyword in the sheet symbol's Designator field and takes the form:
+Repeat(SheetSymbolDesignator, FirstInstance, LastInstance), where SheetSymbolDesignator is the base name for the sheet symbol and FirstInstance and LastInstance together define the number of channels to be instantiated. The FirstInstance parameter must start at a value of one (1).
+

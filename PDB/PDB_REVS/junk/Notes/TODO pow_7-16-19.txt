@@ -1,0 +1,29 @@
+5V reg
+chart 20
+http://www.ti.com/lit/ds/symlink/lm1084.pdf
+zero ohm resistor on output
+
+check 3.3V regulator might not be 1A
+
+battery datasheet
+http://www.vapcelltech.com/uploads/file1/20180614/5b223d66be21d.pdf
+
+3430wide x 4080 length x 2519.69 tall
+
+big regulator
+https://www.digikey.com/product-detail/en/xp-power/QSB35024S24/1470-4168-ND/5638691
+
+lipo-batteries
+https://www.hobbyzone.com/batteries/lipo/EFLB40004S30.html
+
+Trimmer Resistors
+https://www.mouser.com/ProductDetail/Bourns/3362P-1-102ALF?qs=sGAEpiMZZMvygUB3GLcD7pHZXFT4%252BxRqVZEbhap9ezD3xnmPvbNx%2FA%3D%3D
+
+-Regulate Battery voltage to every voltage we need
+
+-Draw power from battery when launching
+
+-Enable powering the entire system with just pad power
+-Buy or make separate charging circuit for charging
+
+-After we pick new high capacity batteries

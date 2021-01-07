@@ -1,0 +1,51 @@
+Removed Pin From Net: NetName=Input24V Pin=24VOUT-1
+Removed Pin From Net: NetName=Input24V Pin=24VOUT-2
+Change Component Designator: OldDesignator=3.3VOUT NewDesignator=J4
+Change Component Designator: OldDesignator=5VOUT NewDesignator=J2
+Change Component Designator: OldDesignator=12VOUT NewDesignator=J5
+Change Component Designator: OldDesignator=24VIN NewDesignator=J6
+Change Component Designator: OldDesignator=24VOUT NewDesignator=J3
+Change Component Designator: OldDesignator=GND NewDesignator=J1
+Added Component: Designator=F1(FUSC3216X98N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://www.littelfuse.com/~/media/electronics/datasheets/fuses/littelfuse_fuse_501_datasheet.pdf.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "0.985mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "LITTELFUSE"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "0501010.WRA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "576-0501010.WRA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.com/Search/Refine.aspx?Keyword=576-0501010.WRA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RS Part Number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RS Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=F2(FUSC3216X98N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://www.littelfuse.com/~/media/electronics/datasheets/fuses/littelfuse_fuse_501_datasheet.pdf.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "0.985mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "LITTELFUSE"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "0501010.WRA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "576-0501010.WRA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.com/Search/Refine.aspx?Keyword=576-0501010.WRA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RS Part Number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RS Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=F3(FUSC3216X98N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://www.littelfuse.com/~/media/electronics/datasheets/fuses/littelfuse_fuse_501_datasheet.pdf.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "0.985mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "LITTELFUSE"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "0501010.WRA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "576-0501010.WRA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.com/Search/Refine.aspx?Keyword=576-0501010.WRA"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RS Part Number"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RS Price/Stock"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=Input24V Pin=F1-2
+Added Pin To Net: NetName=Input24V Pin=F2-2
+Added Pin To Net: NetName=Input24V Pin=F3-2
+Added Pin To Net: NetName=NetF1_1 Pin=F1-1
+Added Pin To Net: NetName=NetF1_1 Pin=F2-1
+Added Pin To Net: NetName=NetF1_1 Pin=F3-1
+Added Pin To Net: NetName=NetF1_1 Pin=J3-1
+Added Pin To Net: NetName=NetF1_1 Pin=J3-2
+Added Net: Name=NetF1_1
+Added Member To Class: ClassName=UpperAviPowerSchem Member=Component F1 0501010.WRA
+Added Member To Class: ClassName=UpperAviPowerSchem Member=Component F2 0501010.WRA
+Added Member To Class: ClassName=UpperAviPowerSchem Member=Component F3 0501010.WRA
+Added Room: Name=UpperAviPowerSchem

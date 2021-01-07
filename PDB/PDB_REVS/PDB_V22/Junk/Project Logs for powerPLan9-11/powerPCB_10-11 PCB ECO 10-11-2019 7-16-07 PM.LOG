@@ -1,0 +1,22 @@
+Change Component Designator: OldDesignator= NewDesignator=K1
+Change Component Designator: OldDesignator=3.3V NewDesignator=T1
+Change Component Designator: OldDesignator=3V3 NewDesignator=J7
+Change Component Designator: OldDesignator=12V NewDesignator=J4
+Change Component Designator: OldDesignator=12V NewDesignator=U1
+Change Component Designator: OldDesignator=22uF NewDesignator=C1
+Change Component Designator: OldDesignator=24V NewDesignator=J2
+Change Component Designator: OldDesignator=BAS NewDesignator=J6
+Change Component Designator: OldDesignator=BAT NewDesignator=J3
+Change Component Designator: OldDesignator=FROM NewDesignator=J1
+Change Component Designator: OldDesignator=TO NewDesignator=J5
+Change Component Designator: OldDesignator=TOG NewDesignator=J8
+Change Net Name : Old Net Name=NetC1_1 New Net Name=OUT
+Change Net Name : Old Net Name=NetJ1_1 New Net Name=REG_IN
+Change Net Name : Old Net Name=NetJ3_2 New Net Name=NC_relay
+Change Net Name : Old Net Name=NetJ4_2 New Net Name=12VOUT
+Change Net Name : Old Net Name=NetJ6_2 New Net Name=NO_relay
+Change Net Name : Old Net Name=NetJ7_2 New Net Name=33VOUT
+Change Net Name : Old Net Name=NetJ8_2 New Net Name=Toggle
+Added Member To Class: ClassName=MainSchem Member=Component U1 TSR_2-24120
+Added Room: Name=MainSchem
+Added Room: Name=U_Switching

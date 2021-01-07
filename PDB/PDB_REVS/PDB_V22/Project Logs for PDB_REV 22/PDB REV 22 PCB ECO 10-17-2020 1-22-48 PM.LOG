@@ -1,0 +1,61 @@
+Removed Pin From Net: NetName=V1 Pin=J2-1
+Removed Pin From Net: NetName=V2 Pin=J2-2
+Removed Pin From Net: NetName=V3 Pin=J2-3
+Removed Pin From Net: NetName=V4 Pin=J2-4
+Removed Pin From Net: NetName=V5 Pin=J2-5
+Removed Pin From Net: NetName=V6 Pin=J2-6
+Removed Pin From Net: NetName=V7 Pin=J2-7
+Removed Pin From Net: NetName=V8 Pin=J2-8
+Removed Member From Class: ClassName=U_BattVoltageLevelDetector Member=R42
+Change Component Footprint: Designator=C7 Old Footprint=CAP_UCD_6P3X7P7_ New Footprint=CAPAE660X800N
+Change Component Footprint: Designator=CFF1 Old Footprint=CAP_UCD_6P3X7P7_ New Footprint=CAPAE660X800N
+Change Component Footprint: Designator=R35 Old Footprint=DIO_RF04UA_ROM New Footprint=RF04
+Change Component Footprint: Designator=U2 Old Footprint=FE_38 New Footprint=SOP50P640X120-39N
+Change Component Footprint: Designator=L1 Old Footprint=PA2982 Inductor New Footprint=PA2982
+Change Component Footprint: Designator=C3 Old Footprint=PolCap 493-6746 New Footprint=CAPAE1030X1450N
+Change Component Footprint: Designator=J1 Old Footprint=SHDR2W66P0X254_1X2_508X572X775P New Footprint=16404562
+Change Component Footprint: Designator=J3 Old Footprint=SHDR2W66P0X254_1X2_508X572X775P New Footprint=16404562
+Change Component Footprint: Designator=J4 Old Footprint=SHDR2W66P0X254_1X2_508X572X775P New Footprint=16404562
+Change Component Footprint: Designator=J5 Old Footprint=SHDR2W320P716_1X2_1574X813X1588P New Footprint=PRT-10474
+Change Component Footprint: Designator=J6 Old Footprint=SHDR2W320P716_1X2_1574X813X1588P New Footprint=PRT-10474
+Change Component Footprint: Designator=J2 Old Footprint=SHDR9W114P0X396_1X9_3558X850X1090P New Footprint=15247182
+Change Component Footprint: Designator=IC2 Old Footprint=TO-220_5 New Footprint=MC33167TG
+Change Component Footprint: Designator=T1 Old Footprint=TSR-2 New Footprint=TSR_2-2433
+Change Component Footprint: Designator=L2 Old Footprint=XAL1510333MED New Footprint=XAL1513153MEB
+Change Component Comment : Designator=J2 Old Comment=B9P-VH_LF__SN_ New Comment=Header 18
+Change Component Comment : Designator=L2 Old Comment=XAL1510-333MED New Comment=XAL1510-103MED
+Added Component: Designator=C?(CAPAE1030X1450N)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Arrow Part Number"; Value = "ULV2W7R5MNL1GS"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/ulv2w7r5mnl1gs/nichicon"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "http://www.nichicon.co.jp/english/products/pdfs/e-ulv.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height"; Value = "14.5mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Nichicon"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "ULV2W7R5MNL1GS"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "647-ULV2W7R5MNL1GS"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Nichicon/ULV2W7R5MNL1GS?qs=aoAypCcaRa8S0jgdKPSENg%3D%3D"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=J2-1
+Added Pin To Net: NetName=GND Pin=J2-2
+Added Pin To Net: NetName=GND Pin=J2-3
+Added Pin To Net: NetName=GND Pin=J2-4
+Added Pin To Net: NetName=GND Pin=J2-5
+Added Pin To Net: NetName=GND Pin=J2-6
+Added Pin To Net: NetName=GND Pin=J2-7
+Added Pin To Net: NetName=GND Pin=J2-8
+Added Pin To Net: NetName=GND Pin=J2-10
+Added Pin To Net: NetName=V1 Pin=J2-11
+Added Pin To Net: NetName=V2 Pin=J2-12
+Added Pin To Net: NetName=V3 Pin=J2-13
+Added Pin To Net: NetName=V4 Pin=J2-14
+Added Pin To Net: NetName=V5 Pin=J2-15
+Added Pin To Net: NetName=V6 Pin=J2-16
+Added Pin To Net: NetName=V7 Pin=J2-17
+Added Pin To Net: NetName=V8 Pin=J2-18
+Change Net Name : Old Net Name=NetR12_1 New Net Name=NetR42_1
+Added Member To Class: ClassName=Main Member=Component C? ULV2W7R5MNL1GS
+Added Member To Class: ClassName=U_BusDistribution Member=Component P1 Header 20
+Added Member To Class: ClassName=U_SwitchingRegulator Member=Component QC1 BSC057N08NS3 G
+Added Member To Class: ClassName=U_SwitchingRegulator Member=Component R11 1.21k 0402
+Added Member To Class: ClassName=U_SwitchingRegulator Member=Component R12 133k 0402
+Added Member To Class: ClassName=U_BattVoltageLevelDetector Member=Component R32 Res4
+Added Member To Class: ClassName=U_Intrumentation Member=Component T1 TSR_2-2433

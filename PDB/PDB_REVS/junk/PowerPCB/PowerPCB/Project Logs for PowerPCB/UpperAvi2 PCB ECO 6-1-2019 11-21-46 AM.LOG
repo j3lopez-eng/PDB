@@ -1,0 +1,22 @@
+Change Component Description : Designator=C1 Old Description=0603 0.1 uF 50 V ±10 % Tolerance X7R SMT Multilayer Ceramic Capacitor New Description=
+0603 0.1 uF 50 V ±10 % Tolerance X7R SMT Multilayer Ceramic Capacitor
+
+Change Component Description : Designator=C2 Old Description=0603 0.1 uF 50 V ±10 % Tolerance X7R SMT Multilayer Ceramic Capacitor New Description=
+0603 0.1 uF 50 V ±10 % Tolerance X7R SMT Multilayer Ceramic Capacitor
+
+Change Component Description : Designator=C3 Old Description=0603 0.1 uF 50 V ±10 % Tolerance X7R SMT Multilayer Ceramic Capacitor New Description=
+0603 0.1 uF 50 V ±10 % Tolerance X7R SMT Multilayer Ceramic Capacitor
+
+Change Component Description : Designator=C4 Old Description=0603 0.1 uF 50 V ±10 % Tolerance X7R SMT Multilayer Ceramic Capacitor New Description=
+0603 0.1 uF 50 V ±10 % Tolerance X7R SMT Multilayer Ceramic Capacitor
+
+Change Component Description : Designator=C5 Old Description=0603 0.1 uF 50 V ±10 % Tolerance X7R SMT Multilayer Ceramic Capacitor New Description=
+0603 0.1 uF 50 V ±10 % Tolerance X7R SMT Multilayer Ceramic Capacitor
+
+Change Component Description : Designator=C6 Old Description=0603 0.1 uF 50 V ±10 % Tolerance X7R SMT Multilayer Ceramic Capacitor New Description=
+0603 0.1 uF 50 V ±10 % Tolerance X7R SMT Multilayer Ceramic Capacitor
+
+Change Net Name : Old Net Name=NetC2_1 New Net Name=5VOUT
+Change Net Name : Old Net Name=NetC4_1 New Net Name=12VOUT
+Change Net Name : Old Net Name=NetC5_1 New Net Name=3.3VOUT
+Added Room: Name=UpperAviPowerSchem

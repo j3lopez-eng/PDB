@@ -1,0 +1,27 @@
+Change Component Footprint: Designator=J6 Old Footprint=0386608802 New Footprint=17709661
+Change Component Comment : Designator=J6 Old Comment=038660-8802 New Comment=1-770966-1
+Change component parameters: Designator = "J6"; Footprint = "17709661"; UniqueID = "\XXKRWCYA"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Allied_Number"; Value = "70084920"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Allied Price/Stock"; Value = "https://www.alliedelec.com/teconnectivity-1-770966-1/70084920/"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Datasheet Link"; Value = "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Customer+Drawing%7F770966%7FG1%7Fpdf%7FEnglish%7FENG_CD_770966_G1.pdf%7F1-770966-1"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height"; Value = "7.77mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Name"; Value = "TE Connectivity"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Part_Number"; Value = "1-770966-1"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Part Number"; Value = "571-1-770966-1"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.com/Search/Refine.aspx?Keyword=571-1-770966-1"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RS Part Number"; Value = "7099906"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RS Price/Stock"; Value = "https://uk.rs-online.com/web/p/products/7099906"; VariantName = "[No Variations]"
+Added Component: Designator=C2(6-0805_M)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Yageo"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "CC0603KRX7R9BB104"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "0603 Yageo"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/CC0603KRX7R9BB104/Yageo/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=5VOUT Pin=C2-1
+Added Pin To Net: NetName=GND Pin=C2-2
+Added Member To Class: ClassName=UpperAviPowerSchem Member=Component C2 .1uF
+Added Room: Name=UpperAviPowerSchem

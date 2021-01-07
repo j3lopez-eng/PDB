@@ -1,0 +1,12 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : Project [Power_plan10-14.PrjPcb]
+   Generated File[powerPCB_10-11.TXT]
+   Generated File[powerPCB_10-11.LDP]
+   Generated File[powerPCB_10-11.DRR]
+
+
+Files Generated   : 3
+Documents Printed : 0
+
+Finished Output Generation At 1:26:04 PM On 10/26/2019

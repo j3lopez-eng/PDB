@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=OUT24V Pin=J3-1
+Removed Pin From Net: NetName=OUT24V Pin=J3-2
+Added Pin To Net: NetName=NetF1_1 Pin=J3-1
+Added Pin To Net: NetName=NetF1_1 Pin=J3-2
+Change Net Name : Old Net Name=NetF1_1 New Net Name=24VIN
+Added Room: Name=UpperAviPowerSchem

@@ -1,0 +1,18 @@
+Change Component Footprint: Designator=C1 Old Footprint=*CAPC1608X90 New Footprint=6-0805_M
+Change Component Footprint: Designator=C3 Old Footprint=*CAPC1608X90 New Footprint=6-0805_M
+Change Component Footprint: Designator=C4 Old Footprint=*CAPC1608X90 New Footprint=6-0805_M
+Change Component Footprint: Designator=C5 Old Footprint=*CAPC1608X90 New Footprint=6-0805_M
+Change Component Footprint: Designator=C6 Old Footprint=*CAPC1608X90 New Footprint=6-0805_M
+Added Component: Designator=C2(6-0805_M)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Yageo"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "CC0603KRX7R9BB104"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "0603 Yageo"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/CC0603KRX7R9BB104/Yageo/view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetC2_1 Pin=C2-1
+Added Pin To Net: NetName=GND Pin=C2-2
+Added Member To Class: ClassName=UpperAviPowerSchem Member=Component C2 .1uF
+Added Room: Name=UpperAviPowerSchem

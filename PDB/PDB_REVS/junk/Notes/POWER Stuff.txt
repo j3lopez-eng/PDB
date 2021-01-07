@@ -1,0 +1,17 @@
+ECU 5V 2.5A:
+Rasberry Pi 5V, 2.5A
+\Flo 6[p0udp\Q3\-FLJSKFUQ4G	1H
+FC:
+Rasberry Pi 5V, 2.5A
+small gps 5V 20mA
+ 
+GPS:
+12-14V, 2A
+Rasb Pi 5V, 2.5A 
+
+total LORA
+5V, 1A
+3.3V 1A
+
+
+m3 3.2mm diam

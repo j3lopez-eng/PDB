@@ -1,0 +1,18 @@
+pay our problems away: (25A)
+https://www.digikey.com/product-detail/en/cui-inc/VFB600-D24-S24/102-2474-ND/2770670
+
+option 2 (wide range, 6A):
+https://www.mouser.com/ProductDetail/Texas-Instruments/TPS40210DRCR?qs=sGAEpiMZZMsMIqGZiACxIdEIZVNoMiLo6b01WjGJJRg%3D
+
+https://www.mouser.com/ProductDetail/Texas-Instruments/TPS40210DGQR?qs=sGAEpiMZZMsMIqGZiACxIdEIZVNoMiLogFNjCobn3ak%3D
+
+little baby regulator:
+https://www.mouser.com/ProductDetail/STMicroelectronics/L7824ACV?qs=sGAEpiMZZMug9GoBKXZ75xbXFDWiKqpm02bf6%2F05bkg%3D
+
+lipo charging:
+charger
+https://hobbyking.com/en_us/turnigy-accucel-6-80w-10a-balancer-charger-lihv-capable.html?countrycode=US&gclid=CjwKCAjw1f_pBRAEEiwApp0JKLsVoyQlDAqM3RfTzYw4fZLhmrkcP5G2h95iVEqV91FJwio4b0hEjxoCYFwQAvD_BwE&gclsrc=aw.ds
+
+
+great scott video overcurrent protection:
+https://www.youtube.com/watch?v=7ctPSgaLxbc

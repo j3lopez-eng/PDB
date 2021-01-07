@@ -1,0 +1,62 @@
+DEBOUNCER:
+ground enable pin
+
+
+GPIO:
+gives out 4.6V
+
+receiver box:
+get rid of gpio
+get rid of 20 ohm resistor
+make 1ks through whole GEORGE SAID YES!
+
+command box:
+not gonna use leds we currently have we dont know their specs
+
+
+
+code:
+
+/*
+ Example 41.1 - Microchip MCP23017 with Arduino
+ http://tronixstuff.com/tutorials > chapter 41
+ John Boxall | CC by-sa-nc
+*/
+// pins 15~17 to GND, I2C bus address is 0x20
+
+int button = 8;
+#include "Wire.h"
+void setup()
+{
+ pinMode(button, INPUT);
+ Wire.begin(); // wake up I2C bus
+// set I/O pins to outputs
+ Wire.beginTransmission(0x20);
+ Wire.write(0x00); // IODIRA register
+ Wire.write(0x00); // set all of port A to outputs
+ Wire.endTransmission();
+Wire.beginTransmission(0x20);
+ Wire.write(0x01); // IODIRB register
+ Wire.write(0x00); // set all of port B to outputs
+ Wire.endTransmission();
+}
+
+void loop()
+{
+   
+  if(digitalRead(button) == LOW){
+     Wire.beginTransmission(0x20);
+     Wire.write(0x13); // GPIOA
+     Wire.write(255); // port A
+     Wire.endTransmission();
+  }
+  
+  if(digitalRead(button) == HIGH){
+     Wire.beginTransmission(0x20);
+     Wire.write(0x13); // GPIOA
+     Wire.write(1); // port A
+     Wire.endTransmission();
+  }
+    delay(1000);
+ 
+}

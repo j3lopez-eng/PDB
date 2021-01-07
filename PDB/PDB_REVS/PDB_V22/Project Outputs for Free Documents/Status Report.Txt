@@ -1,0 +1,12 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : PCB Document [PDB REV 22.PcbDoc]
+   Generated File[PDB REV 22.TXT]
+   Generated File[PDB REV 22.LDP]
+   Generated File[PDB REV 22.DRR]
+
+
+Files Generated   : 3
+Documents Printed : 0
+
+Finished Output Generation At 12:00:30 PM On 9/12/2020

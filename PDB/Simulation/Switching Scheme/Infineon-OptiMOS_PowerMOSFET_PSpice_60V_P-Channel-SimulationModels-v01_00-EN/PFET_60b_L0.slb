@@ -1,0 +1,206 @@
+*version 8.0 523352059
+@index
+symloc DMOS_L1P60 0 1040 b
+symloc SPB08P06P_L0:DMOS_L1P60 1040 271
+symloc SPD08P06P_L0:DMOS_L1P60 1311 271
+symloc SPP08P06P_L0:DMOS_L1P60 1582 271
+symloc SPU08P06P_L0:DMOS_L1P60 1853 271
+symloc BSP170P_L0:DMOS_L1P60 2124 265
+symloc SPB18P06P_L0:DMOS_L1P60 2389 271
+symloc SPD18P06P_L0:DMOS_L1P60 2660 271
+symloc SPP18P06P_L0:DMOS_L1P60 2931 271
+symloc SPU18P06P_L0:DMOS_L1P60 3202 271
+symloc BSP613P_L0:DMOS_L1P60 3473 265
+symloc BSO613SPV_L0:DMOS_L1P60 3738 271
+symloc SPD30P06P_L0:DMOS_L1P60 4009 271
+symloc SPU30P06P_L0:DMOS_L1P60 4280 271
+symloc SPB80P06P_L0:DMOS_L1P60 4551 271
+symloc SPP80P06P_L0:DMOS_L1P60 4822 271
+*symbol DMOS_L1P60 b
+d p-channel DMOS 
+@type p 9.2
+@attributes
+a 0 sp 11 0 39 62 hln 100 PART=DMOS_L1P
+a 0 sp 0 0 0 0 hln 100 TEMPLATE=X^@refdes %drain %gate %source @MODEL
+a 0 s 9 0 -3 0 hcn 100 REFDES=X?
+a 0 sp 0:13 0 5 50 hcn 100 MODEL=DMOS_L1
+@pins
+p 0 25 40 hcn 100 drain n 30 40 v
+a 0 s 0:1 0 31 38 hln 100 PIN=1
+a 0 s 0 0 0 0 hln 100 ERC=x
+p 0 10 20 hcn 100 gate n 0 20 h
+a 0 s 0:1 0 1 18 hln 100 PIN=2
+a 0 s 0 0 0 0 hln 100 ERC=x
+p 0 25 10 hcn 100 source n 30 0 d
+a 0 s 0:1 0 31 -2 hln 100 PIN=3
+a 0 s 0 0 0 0 hln 100 ERC=x
+@graphics 60 40 0 0 10
+v 0 23 17
+26 20
+;
+v 0 23 23
+26 20
+;
+v 0 20 10
+30 10
+;
+v 0 20 30
+30 30
+;
+v 0 30 20
+20 20
+;
+v 0 10 20
+15 20
+;
+v 0 15 10
+15 30
+;
+v 0 30 10
+30 20
+;
+v 0 20 33
+20 27
+;
+v 0 20 13
+20 7
+;
+v 0 20 23
+20 17
+;
+v 0 38 10
+30 10
+;
+c 0 30 10 1 d_info:,,,,,ON,0/0/255,,,,,,,, 
+c 0 30 30 1 d_info:,,,,,ON,0/0/255,,,,,,,, 
+v 0 36 21 d_info:,,,,4/1/6/6,ON,0/0/255,,,,,,,, 
+35 22
+41 22
+38 18
+;
+r 0 35 17 41 18 d_info:,,,,,ON,0/0/255,,,,,,,, 
+c 0 25 20 20 d_info:,0/0/0,,,,,,,,,,,,, 
+v 0 38 10
+38 30
+31 30
+;
+*symbol SPB08P06P_L0 ako DMOS_L1P60
+d p-channel DMOS 
+@type p 8.0
+@attributes
+a 0 sp 11 0 39 62 hln 100 PART=SPB08P06P_L0
+a 0 sp 0 0 0 0 hln 100 TEMPLATE=X^@refdes %drain %gate %source @MODEL
+a 0 s 9 0 -3 0 hcn 100 REFDES=X?
+a 0 sp 0:13 0 5 50 hcn 100 MODEL=SPB08P06P_L0
+*symbol SPD08P06P_L0 ako DMOS_L1P60
+d p-channel DMOS 
+@type p 8.0
+@attributes
+a 0 sp 11 0 39 62 hln 100 PART=SPD08P06P_L0
+a 0 sp 0 0 0 0 hln 100 TEMPLATE=X^@refdes %drain %gate %source @MODEL
+a 0 s 9 0 -3 0 hcn 100 REFDES=X?
+a 0 sp 0:13 0 5 50 hcn 100 MODEL=SPD08P06P_L0
+*symbol SPP08P06P_L0 ako DMOS_L1P60
+d p-channel DMOS 
+@type p 8.0
+@attributes
+a 0 sp 11 0 39 62 hln 100 PART=SPP08P06P_L0
+a 0 sp 0 0 0 0 hln 100 TEMPLATE=X^@refdes %drain %gate %source @MODEL
+a 0 s 9 0 -3 0 hcn 100 REFDES=X?
+a 0 sp 0:13 0 5 50 hcn 100 MODEL=SPP08P06P_L0
+*symbol SPU08P06P_L0 ako DMOS_L1P60
+d p-channel DMOS 
+@type p 8.0
+@attributes
+a 0 sp 11 0 39 62 hln 100 PART=SPU08P06P_L0
+a 0 sp 0 0 0 0 hln 100 TEMPLATE=X^@refdes %drain %gate %source @MODEL
+a 0 s 9 0 -3 0 hcn 100 REFDES=X?
+a 0 sp 0:13 0 5 50 hcn 100 MODEL=SPU08P06P_L0
+*symbol BSP170P_L0 ako DMOS_L1P60
+d p-channel DMOS 
+@type p 8.0
+@attributes
+a 0 sp 11 0 39 62 hln 100 PART=BSP170P_L0
+a 0 sp 0 0 0 0 hln 100 TEMPLATE=X^@refdes %drain %gate %source @MODEL
+a 0 s 9 0 -3 0 hcn 100 REFDES=X?
+a 0 sp 0:13 0 5 50 hcn 100 MODEL=BSP170P_L0
+*symbol SPB18P06P_L0 ako DMOS_L1P60
+d p-channel DMOS 
+@type p 8.0
+@attributes
+a 0 sp 11 0 39 62 hln 100 PART=SPB18P06P_L0
+a 0 sp 0 0 0 0 hln 100 TEMPLATE=X^@refdes %drain %gate %source @MODEL
+a 0 s 9 0 -3 0 hcn 100 REFDES=X?
+a 0 sp 0:13 0 5 50 hcn 100 MODEL=SPB18P06P_L0
+*symbol SPD18P06P_L0 ako DMOS_L1P60
+d p-channel DMOS 
+@type p 8.0
+@attributes
+a 0 sp 11 0 39 62 hln 100 PART=SPD18P06P_L0
+a 0 sp 0 0 0 0 hln 100 TEMPLATE=X^@refdes %drain %gate %source @MODEL
+a 0 s 9 0 -3 0 hcn 100 REFDES=X?
+a 0 sp 0:13 0 5 50 hcn 100 MODEL=SPD18P06P_L0
+*symbol SPP18P06P_L0 ako DMOS_L1P60
+d p-channel DMOS 
+@type p 8.0
+@attributes
+a 0 sp 11 0 39 62 hln 100 PART=SPP18P06P_L0
+a 0 sp 0 0 0 0 hln 100 TEMPLATE=X^@refdes %drain %gate %source @MODEL
+a 0 s 9 0 -3 0 hcn 100 REFDES=X?
+a 0 sp 0:13 0 5 50 hcn 100 MODEL=SPP18P06P_L0
+*symbol SPU18P06P_L0 ako DMOS_L1P60
+d p-channel DMOS 
+@type p 8.0
+@attributes
+a 0 sp 11 0 39 62 hln 100 PART=SPU18P06P_L0
+a 0 sp 0 0 0 0 hln 100 TEMPLATE=X^@refdes %drain %gate %source @MODEL
+a 0 s 9 0 -3 0 hcn 100 REFDES=X?
+a 0 sp 0:13 0 5 50 hcn 100 MODEL=SPU18P06P_L0
+*symbol BSP613P_L0 ako DMOS_L1P60
+d p-channel DMOS 
+@type p 8.0
+@attributes
+a 0 sp 11 0 39 62 hln 100 PART=BSP613P_L0
+a 0 sp 0 0 0 0 hln 100 TEMPLATE=X^@refdes %drain %gate %source @MODEL
+a 0 s 9 0 -3 0 hcn 100 REFDES=X?
+a 0 sp 0:13 0 5 50 hcn 100 MODEL=BSP613P_L0
+*symbol BSO613SPV_L0 ako DMOS_L1P60
+d p-channel DMOS 
+@type p 8.0
+@attributes
+a 0 sp 11 0 39 62 hln 100 PART=BSO613SPV_L0
+a 0 sp 0 0 0 0 hln 100 TEMPLATE=X^@refdes %drain %gate %source @MODEL
+a 0 s 9 0 -3 0 hcn 100 REFDES=X?
+a 0 sp 0:13 0 5 50 hcn 100 MODEL=BSO613SPV_L0
+*symbol SPD30P06P_L0 ako DMOS_L1P60
+d p-channel DMOS 
+@type p 8.0
+@attributes
+a 0 sp 11 0 39 62 hln 100 PART=SPD30P06P_L0
+a 0 sp 0 0 0 0 hln 100 TEMPLATE=X^@refdes %drain %gate %source @MODEL
+a 0 s 9 0 -3 0 hcn 100 REFDES=X?
+a 0 sp 0:13 0 5 50 hcn 100 MODEL=SPD30P06P_L0
+*symbol SPU30P06P_L0 ako DMOS_L1P60
+d p-channel DMOS 
+@type p 8.0
+@attributes
+a 0 sp 11 0 39 62 hln 100 PART=SPU30P06P_L0
+a 0 sp 0 0 0 0 hln 100 TEMPLATE=X^@refdes %drain %gate %source @MODEL
+a 0 s 9 0 -3 0 hcn 100 REFDES=X?
+a 0 sp 0:13 0 5 50 hcn 100 MODEL=SPU30P06P_L0
+*symbol SPB80P06P_L0 ako DMOS_L1P60
+d p-channel DMOS 
+@type p 8.0
+@attributes
+a 0 sp 11 0 39 62 hln 100 PART=SPB80P06P_L0
+a 0 sp 0 0 0 0 hln 100 TEMPLATE=X^@refdes %drain %gate %source @MODEL
+a 0 s 9 0 -3 0 hcn 100 REFDES=X?
+a 0 sp 0:13 0 5 50 hcn 100 MODEL=SPB80P06P_L0
+*symbol SPP80P06P_L0 ako DMOS_L1P60
+d p-channel DMOS 
+@type p 8.0
+@attributes
+a 0 sp 11 0 39 62 hln 100 PART=SPP80P06P_L0
+a 0 sp 0 0 0 0 hln 100 TEMPLATE=X^@refdes %drain %gate %source @MODEL
+a 0 s 9 0 -3 0 hcn 100 REFDES=X?
+a 0 sp 0:13 0 5 50 hcn 100 MODEL=SPP80P06P_L0

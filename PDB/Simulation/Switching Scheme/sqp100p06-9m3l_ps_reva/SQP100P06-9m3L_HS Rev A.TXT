@@ -1,0 +1,37 @@
+********************************
+* Copyright:                   *
+* Vishay Intertechnology, Inc. *
+********************************
+*Dec 22, 2014
+*ECN S14-2485, Rev. A
+*This document is intended as a SPICE modeling guideline and does not
+*constitute a commercial product datasheet. Designers should refer to the
+*appropriate datasheet of the same number for guaranteed specification
+*limits.
+.SUBCKT SQP100P06-9m3L D G S 
+M1 3 GX S S PMOS W= 16412611u L= 0.3u 
+M2 S GX S D NMOS W= 16412611u L= 0.62u 
+R1 D 3 6.391e-03 5.713e-03 7.604e-06 
+CGS GX S 5.354e-09 
+CGD GX D 6.959e-11 
+RG G GY 2.2
+RTCV 100 S 1e6 6.667e-04 -7.770e-07 
+ETCV GY GX 100 200 1 
+ITCV S 100 1u 
+VTCV 200 S 1 
+DBD D S DBD 16412611u 
+**************************************************************** 
+.MODEL PMOS PMOS ( LEVEL = 3 TOX = 5e-8 
++ RS = 0 KP = 2.929e-06 NSUB = 6.42e+16 
++ KAPPA = 9.220e-04 NFS = 1.000e+12 
++ LD = 0 IS = 0 TPG = -1 CAPOP = 12 ) 
+*************************************************************** 
+.MODEL NMOS NMOS ( LEVEL = 3 TOX = 5e-8 
++NSUB = 1.343e+16 IS = 0 TPG = -1 CAPOP = 12 ) 
+**************************************************************** 
+.MODEL DBD D ( 
++FC = 0.1 TT = 1.001e-08 TREF = 25 BV = 61 
++RS = 3.617e-02 N = 1.020e+00 IS = 3.880e-13 
++EG = 1.212e+00 XTI = -2.270e-01 TRS = 3.439e-03 
++CJO = 8.088e-11 VJ = 1.291e+00 M = 5.104e-01 ) 
+.ENDS 

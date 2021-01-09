@@ -1,0 +1,61 @@
+Circuit: * C:\Users\xxjac\Documents\GitHub\PDB\PDB\Simulation\Switching Scheme\switching_scheme.asc
+
+Unknown model type "" -- ignored
+Limiting rise time of source v2 to 1.95399e-015
+Limiting fall time of source v2 to 1.95399e-015
+Instance "m:m2:2": Length shorter than recommended for a level 3 MOSFET.
+Instance "m:m2:1": Length shorter than recommended for a level 3 MOSFET.
+Direct Newton iteration for .op point succeeded.
+Heightened Def Con from 1.00009 to 1.00009
+Heightened Def Con from 1.0001 to 1.0001
+Heightened Def Con from 1.0001 to 1.0001
+Heightened Def Con from 1.00011 to 1.00011
+Heightened Def Con from 1.00012 to 1.00012
+Heightened Def Con from 1.00016 to 1.00016
+Heightened Def Con from 1.00018 to 1.00018
+Heightened Def Con from 1.00019 to 1.00019
+Heightened Def Con from 1.00029 to 1.00029
+Heightened Def Con from 1.00031 to 1.00031
+Heightened Def Con from 1.00031 to 1.00031
+Heightened Def Con from 1.00038 to 1.00038
+Heightened Def Con from 1.00042 to 1.00042
+Heightened Def Con from 1.00043 to 1.00043
+Heightened Def Con from 1.00048 to 1.00048
+Heightened Def Con from 1.00048 to 1.00048
+Heightened Def Con from 1.00051 to 1.00051
+Heightened Def Con from 1.00051 to 1.00051
+Heightened Def Con from 1.00051 to 1.00051
+Heightened Def Con from 1.00052 to 1.00052
+Heightened Def Con from 1.00055 to 1.00055
+Heightened Def Con from 1.00055 to 1.00055
+Heightened Def Con from 1.00056 to 1.00056
+Heightened Def Con from 1.00064 to 1.00064
+Heightened Def Con from 1.00066 to 1.00066
+Heightened Def Con from 1.00068 to 1.00068
+Heightened Def Con from 1.00068 to 1.00068
+Heightened Def Con from 1.0007 to 1.0007
+Heightened Def Con from 1.00071 to 1.00071
+Heightened Def Con from 1.00072 to 1.00072
+Heightened Def Con from 1.00074 to 1.00074
+Heightened Def Con from 1.00077 to 1.00077
+Heightened Def Con from 1.00078 to 1.00078
+Heightened Def Con from 1.00084 to 1.00084
+Heightened Def Con from 1.00091 to 1.00091
+
+Date: Sat Jan 09 11:57:15 2021
+Total elapsed time: 34.682 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 6106226
+traniter = 6106196
+tranpoints = 1690405
+accept = 1478297
+rejected = 212143
+matrix size = 52
+fillins = 61
+solver = Normal
+Matrix Compiler1: 6.71 KB object code size  1.2/0.7/[0.5]
+Matrix Compiler2: 5.21 KB object code size  0.4/0.7/[0.4]
+

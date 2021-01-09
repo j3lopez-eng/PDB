@@ -1,0 +1,253 @@
+*version 9.1 690310757
+@index
+symloc DMOS_L3P60 0 1690 b
+symloc DMOS_L3P60a 1690 1673 b
+symloc SPD09P06PL:DMOS_L3P60a 3363 405
+symloc SPU09P06PL:DMOS_L3P60a 3768 405
+symloc BSP171P:DMOS_L3P60 4173 395
+symloc BSP315P:DMOS_L3P60 4568 395
+symloc BSS83P:DMOS_L3P60 4963 392
+symloc BSS84P:DMOS_L3P60 5355 392
+symloc BSS84PW:DMOS_L3P60 5747 395
+symloc SISC0_25P06P:DMOS_L3P60 6142 410
+symloc BSR315P:DMOS_L3P60 6552 395
+*symbol DMOS_L3P60 b
+d p-Channel DMOS with thermal network
+@type p 8.0
+@attributes
+a 0 sp 11 0 39 62 hln 100 PART=DMOS_L3P60
+a 0 sp 0 0 0 0 hln 100 TEMPLATE=X^@refdes %drain %gate %source %Tj %Tsolder_joint @MODEL  PARAMS: ?dVth|dVth=@dVth| ?dRdson|dRdson=@dRdson| ?dgfs|dgfs=@dgfs| ?dC|dC=@dC| ?dZth|dZth=@dZth| 
+a 0 s 9 0 -3 0 hcn 100 REFDES=X?
+a 0 sp 0:13 0 5 50 hcn 100 MODEL=DMOS_L3
+a 0 u 0:13 0 0 10 hlb 100 dVth=0
+a 0 u 0:13 0 0 20 hlb 100 dRdson=0
+a 0 u 0:13 0 0 30 hlb 100 dgfs=0
+a 0 u 0:13 0 0 40 hlb 100 dC=0
+a 0 u 0:13 0 0 50 hlb 100 dZth=0
+@pins
+p 0 25 40 hcn 100 drain n 30 40 v
+a 0 s 0:1 0 31 38 hln 100 PIN=1
+a 0 s 0 0 0 0 hln 100 ERC=x
+p 0 10 20 hcn 100 gate n 0 20 h
+a 0 s 0:1 0 1 18 hln 100 PIN=2
+a 0 s 0 0 0 0 hln 100 ERC=x
+p 0 25 10 hcn 100 source n 30 0 d
+a 0 s 0:1 0 31 -2 hln 100 PIN=3
+a 0 s 0 0 0 0 hln 100 ERC=x
+p 0 70 8 hrn 100 Tj n 60 10 u
+a 0 s 0:1 0 51 16 hln 100 PIN=4
+a 0 s 0:13 0 60 10 hln 100 ERC=x
+a 0 s 0:13 0 0 10 hln 100 FLOAT=r
+p 0 142 30 hrn 100 Tsolder_joint n 60 30 u
+a 0 s 0:1 0 51 36 hln 100 PIN=5
+a 0 s 0:13 0 60 30 hln 100 ERC=x
+@graphics 60 40 0 0 10
+c 0 25 20 20 d_info:,0/0/0,,,,,,,,,,,,, 
+v 0 38 10
+38 30
+31 30
+;
+v 0 36 21 d_info:,,,,4/1/6/6,ON,0/0/255,,,,,,,, 
+35 22
+41 22
+38 18
+;
+v 0 23 17
+26 20
+;
+v 0 23 23
+26 20
+;
+r 0 35 17 41 18 d_info:,,,,,ON,0/0/255,,,,,,,, 
+c 0 30 30 1 d_info:,,,,,ON,0/0/255,,,,,,,, 
+c 0 30 10 1 d_info:,,,,,ON,0/0/255,,,,,,,, 
+v 0 30 10
+30 20
+;
+v 0 30 20
+20 20
+;
+v 0 38 10
+30 10
+;
+v 0 15 10
+15 30
+;
+v 0 10 20
+15 20
+;
+v 0 20 10
+30 10
+;
+v 0 20 30
+30 30
+;
+v 0 20 23
+20 17
+;
+v 0 20 33
+20 27
+;
+v 0 20 13
+20 7
+;
+z 26 54 6 hln 100 2 d_info:,,,,,,,,,,,,,6, 
+Tj
+z 26 48 26 hln 100 13 d_info:,,,,,,,,,,,,,6, 
+Tsolder_joint
+*symbol DMOS_L3P60a b
+d p-Channel DMOS with thermal network
+@type p 8.0
+@attributes
+a 0 sp 11 0 39 62 hln 100 PART=DMOS_L3P60
+a 0 sp 0 0 0 0 hln 100 TEMPLATE=X^@refdes %drain %gate %source %Tj %Tcase @MODEL PARAMS: ?dVth|dVth=@dVth| ?dRdson|dRdson=@dRdson| ?dgfs|dgfs=@dgfs| ?dC|dC=@dC| ?dZth|dZth=@dZth| 
+a 0 s 9 0 -3 0 hcn 100 REFDES=X?
+a 0 sp 0:13 0 5 50 hcn 100 MODEL=DMOS_L3
+a 0 u 0:13 0 0 10 hlb 100 dVth=0
+a 0 u 0:13 0 0 20 hlb 100 dRdson=0
+a 0 u 0:13 0 0 30 hlb 100 dgfs=0
+a 0 u 0:13 0 0 40 hlb 100 dC=0
+a 0 u 0:13 0 0 50 hlb 100 dZth=0
+@pins
+p 0 25 40 hcn 100 drain n 30 40 v
+a 0 s 0:1 0 31 38 hln 100 PIN=1
+a 0 s 0 0 0 0 hln 100 ERC=x
+p 0 10 20 hcn 100 gate n 0 20 h
+a 0 s 0:1 0 1 18 hln 100 PIN=2
+a 0 s 0 0 0 0 hln 100 ERC=x
+p 0 25 10 hcn 100 source n 30 0 d
+a 0 s 0:1 0 31 -2 hln 100 PIN=3
+a 0 s 0 0 0 0 hln 100 ERC=x
+p 0 70 8 hrn 100 Tj n 60 10 u
+a 0 s 0:1 0 51 16 hln 100 PIN=4
+a 0 s 0:13 0 60 10 hln 100 ERC=x
+a 0 s 0:13 0 0 10 hln 100 FLOAT=r
+p 0 142 30 hrn 100 Tsolder_joint n 60 30 u
+a 0 s 0:1 0 51 36 hln 100 PIN=5
+a 0 s 0:13 0 60 30 hln 100 ERC=x
+@graphics 60 40 0 0 10
+c 0 25 20 20 d_info:,0/0/0,,,,,,,,,,,,, 
+v 0 38 10
+38 30
+31 30
+;
+v 0 36 21 d_info:,,,,4/1/6/6,ON,0/0/255,,,,,,,, 
+35 22
+41 22
+38 18
+;
+v 0 23 17
+26 20
+;
+v 0 23 23
+26 20
+;
+r 0 35 17 41 18 d_info:,,,,,ON,0/0/255,,,,,,,, 
+c 0 30 30 1 d_info:,,,,,ON,0/0/255,,,,,,,, 
+c 0 30 10 1 d_info:,,,,,ON,0/0/255,,,,,,,, 
+v 0 30 10
+30 20
+;
+v 0 30 20
+20 20
+;
+v 0 38 10
+30 10
+;
+v 0 15 10
+15 30
+;
+v 0 10 20
+15 20
+;
+v 0 20 10
+30 10
+;
+v 0 20 30
+30 30
+;
+v 0 20 23
+20 17
+;
+v 0 20 33
+20 27
+;
+v 0 20 13
+20 7
+;
+z 26 54 6 hln 100 2 d_info:,,,,,,,,,,,,,6, 
+Tj
+z 26 48 26 hln 100 5 d_info:,,,,,,,,,,,,,6, 
+Tcase
+*symbol SPD09P06PL ako DMOS_L3P60a
+d p-Channel DMOS with thermal network
+@type p 8.0
+@attributes
+a 0 sp 11 0 39 62 hln 100 PART=SPD09P06PL
+a 0 sp 0 0 0 0 hln 100 TEMPLATE=X^@refdes %drain %gate %source %Tj %Tsolder_joint @MODEL  PARAMS: ?dVth|dVth=@dVth| ?dRdson|dRdson=@dRdson| ?dgfs|dgfs=@dgfs| ?dC|dC=@dC| ?dZth|dZth=@dZth| 
+a 0 s 9 0 -3 0 hcn 100 REFDES=X?
+a 0 sp 0:13 0 5 50 hcn 100 MODEL=SPD09P06PL
+*symbol SPU09P06PL ako DMOS_L3P60a
+d p-Channel DMOS with thermal network
+@type p 8.0
+@attributes
+a 0 sp 11 0 39 62 hln 100 PART=SPU09P06PL
+a 0 sp 0 0 0 0 hln 100 TEMPLATE=X^@refdes %drain %gate %source %Tj %Tsolder_joint @MODEL  PARAMS: ?dVth|dVth=@dVth| ?dRdson|dRdson=@dRdson| ?dgfs|dgfs=@dgfs| ?dC|dC=@dC| ?dZth|dZth=@dZth| 
+a 0 s 9 0 -3 0 hcn 100 REFDES=X?
+a 0 sp 0:13 0 5 50 hcn 100 MODEL=SPU09P06PL
+*symbol BSP171P ako DMOS_L3P60
+d p-Channel DMOS with thermal network
+@type p 8.0
+@attributes
+a 0 sp 11 0 39 62 hln 100 PART=BSP171P
+a 0 sp 0 0 0 0 hln 100 TEMPLATE=X^@refdes %drain %gate %source %Tj %Tsolder_joint @MODEL  PARAMS: ?dVth|dVth=@dVth| ?dRdson|dRdson=@dRdson| ?dgfs|dgfs=@dgfs| ?dC|dC=@dC| ?dZth|dZth=@dZth| 
+a 0 s 9 0 -3 0 hcn 100 REFDES=X?
+a 0 sp 0:13 0 5 50 hcn 100 MODEL=BSP171P
+*symbol BSP315P ako DMOS_L3P60
+d p-Channel DMOS with thermal network
+@type p 8.0
+@attributes
+a 0 sp 11 0 39 62 hln 100 PART=BSP315P
+a 0 sp 0 0 0 0 hln 100 TEMPLATE=X^@refdes %drain %gate %source %Tj %Tsolder_joint @MODEL  PARAMS: ?dVth|dVth=@dVth| ?dRdson|dRdson=@dRdson| ?dgfs|dgfs=@dgfs| ?dC|dC=@dC| ?dZth|dZth=@dZth| 
+a 0 s 9 0 -3 0 hcn 100 REFDES=X?
+a 0 sp 0:13 0 5 50 hcn 100 MODEL=BSP315P
+*symbol BSS83P ako DMOS_L3P60
+d p-Channel DMOS with thermal network
+@type p 8.0
+@attributes
+a 0 sp 11 0 39 62 hln 100 PART=BSS83P
+a 0 sp 0 0 0 0 hln 100 TEMPLATE=X^@refdes %drain %gate %source %Tj %Tsolder_joint @MODEL  PARAMS: ?dVth|dVth=@dVth| ?dRdson|dRdson=@dRdson| ?dgfs|dgfs=@dgfs| ?dC|dC=@dC| ?dZth|dZth=@dZth| 
+a 0 s 9 0 -3 0 hcn 100 REFDES=X?
+a 0 sp 0:13 0 5 50 hcn 100 MODEL=BSS83P
+*symbol BSS84P ako DMOS_L3P60
+d p-Channel DMOS with thermal network
+@type p 8.0
+@attributes
+a 0 sp 11 0 39 62 hln 100 PART=BSS84P
+a 0 sp 0 0 0 0 hln 100 TEMPLATE=X^@refdes %drain %gate %source %Tj %Tsolder_joint @MODEL  PARAMS: ?dVth|dVth=@dVth| ?dRdson|dRdson=@dRdson| ?dgfs|dgfs=@dgfs| ?dC|dC=@dC| ?dZth|dZth=@dZth| 
+a 0 s 9 0 -3 0 hcn 100 REFDES=X?
+a 0 sp 0:13 0 5 50 hcn 100 MODEL=BSS84P
+*symbol BSS84PW ako DMOS_L3P60
+d p-Channel DMOS with thermal network
+@type p 8.0
+@attributes
+a 0 sp 11 0 39 62 hln 100 PART=BSS84PW
+a 0 sp 0 0 0 0 hln 100 TEMPLATE=X^@refdes %drain %gate %source %Tj %Tsolder_joint @MODEL  PARAMS: ?dVth|dVth=@dVth| ?dRdson|dRdson=@dRdson| ?dgfs|dgfs=@dgfs| ?dC|dC=@dC| ?dZth|dZth=@dZth| 
+a 0 s 9 0 -3 0 hcn 100 REFDES=X?
+a 0 sp 0:13 0 5 50 hcn 100 MODEL=BSS84PW
+*symbol SISC0_25P06P ako DMOS_L3P60
+d p-Channel DMOS with thermal network
+@type p 8.0
+@attributes
+a 0 sp 11 0 39 62 hln 100 PART=SISC0_25P06P
+a 0 sp 0 0 0 0 hln 100 TEMPLATE=X^@refdes %drain %gate %source %Tj %Tsolder_joint @MODEL  PARAMS: ?dVth|dVth=@dVth| ?dRdson|dRdson=@dRdson| ?dgfs|dgfs=@dgfs| ?dC|dC=@dC| ?dZth|dZth=@dZth| 
+a 0 s 9 0 -3 0 hcn 100 REFDES=X?
+a 0 sp 0:13 0 5 50 hcn 100 MODEL=SISC0_25P06P
+*symbol BSR315P ako DMOS_L3P60
+d p-Channel DMOS with thermal network
+@type p 9.1
+@attributes
+a 0 sp 11 0 39 62 hln 100 PART=BSR315P
+a 0 sp 0 0 0 0 hln 100 TEMPLATE=X^@refdes %drain %gate %source %Tj %Tsolder_joint @MODEL  PARAMS: ?dVth|dVth=@dVth| ?dRdson|dRdson=@dRdson| ?dgfs|dgfs=@dgfs| ?dC|dC=@dC| ?dZth|dZth=@dZth| 
+a 0 s 9 0 -3 0 hcn 100 REFDES=X?
+a 0 sp 0:13 0 5 50 hcn 100 MODEL=BSR315P

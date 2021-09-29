@@ -1,0 +1,2 @@
+Record=TopLevelDocument|FileName=MainSchem.SchDoc
+Record=SheetSymbol|SourceDocument=MainSchem.SchDoc|Designator=U_Switching|SchDesignator=U_Switching|FileName=Switching.SchDoc|SymbolType=Normal|RawFileName=Switching.SchDoc|DesignItemId= |SourceLibraryName= |ObjectKind=Sheet Symbol|RevisionGUID= |ItemGUID= |VaultGUID= 

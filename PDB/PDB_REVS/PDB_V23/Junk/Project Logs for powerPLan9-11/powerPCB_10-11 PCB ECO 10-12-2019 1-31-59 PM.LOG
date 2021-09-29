@@ -1,0 +1,31 @@
+Removed Pin From Net: NetName=OUT Pin=22uF-1
+Removed Pin From Net: NetName=GND Pin=22uF-2
+Removed Member From Class: ClassName=U_Switching Member=22uF
+Change Component Designator: OldDesignator=+FROM- NewDesignator=J1
+Change Component Designator: OldDesignator=+TO- NewDesignator=J5
+Change Component Designator: OldDesignator=3V3 NewDesignator=J7
+Change Component Designator: OldDesignator=3V3 NewDesignator=T1
+Change Component Designator: OldDesignator=12V NewDesignator=J4
+Change Component Designator: OldDesignator=12V NewDesignator=U1
+Change Component Designator: OldDesignator=24V NewDesignator=J2
+Change Component Designator: OldDesignator=BASE NewDesignator=J6
+Change Component Designator: OldDesignator=BATT NewDesignator=J3
+Change Component Designator: OldDesignator=TOG NewDesignator=J8
+Added Component: Designator=C1(SLPX(H9))
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Allied_Number"; Value = "70189923"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Allied Price/Stock"; Value = "https://www.alliedelec.com/cornell-dubilier-slpx223m050h9p3/70189923/"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet Link"; Value = "http://www.cde.com/resources/catalogs/SLPX.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Cornell Dubilier"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "SLPX223M050H9P3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "598-SLPX223M050H9P3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.com/Search/Refine.aspx?Keyword=598-SLPX223M050H9P3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RS Part Number"; Value = "7441170P"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RS Price/Stock"; Value = "http://uk.rs-online.com/web/p/products/7441170P"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=OUT Pin=C1-1
+Added Pin To Net: NetName=GND Pin=C1-2
+Added Member To Class: ClassName=U_Switching Member=Component C1 22mF
+Added Member To Class: ClassName=MainSchem Member=Component T1 TSR_2-2433
+Added Member To Class: ClassName=MainSchem Member=Component U1 TSR_2-24120
+Added Room: Name=MainSchem
+Added Room: Name=U_Switching

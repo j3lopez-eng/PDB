@@ -1,0 +1,426 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 {
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body {
+			font-family : segoe ui;
+		}
+
+		td, th {
+			padding: 0.5em;
+			text-align : left;
+			width: 10em;
+		}
+		th {
+			background-color : #EEEEEE;
+
+		}
+		th.column1, td.column1 {
+			text-align: left;
+			width : auto;
+		}
+		table {
+			width : 100%;
+			font-size: 0.9em;
+		}
+
+		.DRC_summary_header {
+			padding-bottom : 0.1em;
+			border : 0px solid black;
+			width: 100%;
+			align: left;
+		}
+
+		.DRC_summary_header_col1,
+		.DRC_summary_header_col2, 
+		.DRC_summary_header_col3 {
+			color : black;
+			font-size:100%;
+			padding : 0em;
+			padding-top : 0.2em;
+			padding-bottom 0.2em;
+			border : 0px solid black;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.DRC_summary_header_col1 {
+			font-weight: bold;
+			width: 8em;
+		}
+
+		.DRC_summary_header_col2 {
+			width: 0.1em;
+		
+		}
+
+		.DRC_summary_header_col3 {
+			width : auto;
+		}
+
+		.header_holder {
+		    Width = 100%;
+		    border = 0px solid green;
+		    padding = 0;
+		}
+
+
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.front_matter_column1 {
+			width : 8em;
+			font-weight: bold;
+		}
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : left;
+		}
+		.warning, .error {
+			color : red;
+			font-weight : bold;
+		}
+		tr.onmouseout_odd {
+			background-color : #white;
+		}
+		tr.onmouseout_even { 
+			background-color : #FAFAFA;
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #21489e;
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}
+	</script><title>Design Rule Verification Report</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD19\Templates\AD_logo.png
+		"><h1>Design Rule Verification Report</h1>
+<table class="header_holder">
+<td class="column1">
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">10/14/2019</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">3:04:59 PM</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:01</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///C:\Users\Jacob\OneDrive\Avionics\powerPLan9-11\powerPCB_10-11.PcbDoc" class="file"><acronym title="C:\Users\Jacob\OneDrive\Avionics\powerPLan9-11\powerPCB_10-11.PcbDoc">C:\Users\Jacob\OneDrive\Avionics\powerPLan9-11\powerPCB_10-11.PcbDoc</acronym></a></td>
+</tr>
+</table>
+</td>
+<td class="column2">
+<table class="DRC_summary_header">
+<tr>
+<td class="DRC_summary_header_col1">Warnings:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3">0</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Rule Violations:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">30</td></tr>
+</table>
+</td>
+</table><a name="ID3MJPFMUIJ5UGMCCWJEUQ1CATQMCZ45TDJZSC2ZKYOJVZC5YPWQXF"><h2>Summary</h2></a><table>
+<tr>
+<th class="column1">Warnings</th>
+<th class="column2">Count</th>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">0</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Rule Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDV1NG4U5TKGPBJ53WUZOJFGZDTJVWUXTSR3ZE1LG4XM35HR3FOEBM">Clearance Constraint (Gap=10mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID1DNXPU2WRHXNBCIXB5IYNFDPMIJRHXPEUZ1KJXMRL3T0NL4WVFQK">Short-Circuit Constraint (Allowed=No) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID3YJ4L1WPX0G5FVURVJJOFSJM5PO2JCWOZD2PPRCJKQZVSRG4KCRP">Un-Routed Net Constraint ( (All) )</a></td>
+<td class="column2">3</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDHB1UQYPQRR5FPRF5VJR32Q13TI10FRBIMLUAAVJTG35B4V44BF0L">Modified Polygon (Allow modified: No), (Allow shelved: No)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDVZVPSP3G3BDVMPU1UKEN3MIMGMCRJSJBEDB05YCFY2BPSDMIKFJN">Width Constraint (Min=10mil) (Max=700mil) (Preferred=10mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDVX12LBKWE100EEPDIQMG215VMNVXQJTJE52B25IWUCYHBCPOEEWD">Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDZZUR4QRHR1N3LCIME1R4ZFPFSOS2Z3LTMML3QXHXLAQFE2UC1P5G">Hole Size Constraint (Min=1mil) (Max=100mil) (All)</a></td>
+<td class="column2">18</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDXNR4IMHAWT3RFPEC550HX43UNFBB1UJJ1ZSTKDD35BSV1ID5XTGO">Hole To Hole Clearance (Gap=10mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID0GEB204C0BGLKNOORCVVGIF33BOUETUVQEXR5BM11M5P0GAIHM2L">Minimum Solder Mask Sliver (Gap=10mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDBV4QCZG41QPFF1PHLZMVO0VGOHGKNMCX3IIZZZDRXA0YSZTTJGGE">Silk To Solder Mask (Clearance=10mil) (IsPad),(All)</a></td>
+<td class="column2">9</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDM2VQEGO1CEO3B13QRYMKSCTFTCJCAWPZEVCESDP2ZAG01IWQ0FC">Silk to Silk (Clearance=10mil) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID20RUEKKPFL2PC1KQ5NNSO0U1AFVDDBWD2CU0VFFUNRFE1LYA5F0F">Net Antennae (Tolerance=0mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDSC2IEO3EFMYLOITIOHDXUJIFXHBDX3SWDWXP1LCVWNPAVQZXZQAC">Height Constraint (Min=0mil) (Max=99999mil) (Prefered=500mil) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">30</td>
+</tr>
+</table><br><a name="ID3YJ4L1WPX0G5FVURVJJOFSJM5PO2JCWOZD2PPRCJKQZVSRG4KCRP"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Un-Routed Net Constraint ( (All) )</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jacob\OneDrive\Avionics\powerPLan9-11\powerPCB_10-11.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2071.256mil|Location2.X=3804.394mil|Location1.Y=1125.606mil|Location2.Y=1678.744mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jacob\OneDrive\Avionics\powerPLan9-11\powerPCB_10-11.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2071.256mil|Location2.X=3804.394mil|Location1.Y=1125.606mil|Location2.Y=1678.744mil|Absolute=True">Un-Routed Net Constraint: Net REG_IN Between Pad FROM-1(1230mil,990mil) on Multi-Layer And Pad 24VOUT-2(2800mil,600mil) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jacob\OneDrive\Avionics\powerPLan9-11\powerPCB_10-11.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1890.961mil|Location2.X=3109.394mil|Location1.Y=1124.386mil|Location2.Y=3553.016mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jacob\OneDrive\Avionics\powerPLan9-11\powerPCB_10-11.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1890.961mil|Location2.X=3109.394mil|Location1.Y=1124.386mil|Location2.Y=3553.016mil|Absolute=True">Un-Routed Net Constraint: Net NO_relay Between Pad K1-6(1101.85mil,2812.126mil) on Multi-Layer And Pad BASE-2(2105mil,598.779mil) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jacob\OneDrive\Avionics\powerPLan9-11\powerPCB_10-11.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2900.606mil|Location2.X=3221.008mil|Location1.Y=1529.386mil|Location2.Y=3926.008mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jacob\OneDrive\Avionics\powerPLan9-11\powerPCB_10-11.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2900.606mil|Location2.X=3221.008mil|Location1.Y=1529.386mil|Location2.Y=3926.008mil|Absolute=True">Un-Routed Net Constraint: Net NC_relay Between Pad BATT-2(2105mil,1003.779mil) on Multi-Layer And Pad K2-3(2255mil,3230mil) on Multi-Layer </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDZZUR4QRHR1N3LCIME1R4ZFPFSOS2Z3LTMML3QXHXLAQFE2UC1P5G"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Hole Size Constraint (Min=1mil) (Max=100mil) (All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jacob\OneDrive\Avionics\powerPLan9-11\powerPCB_10-11.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3914.454mil|Location2.X=4049.562mil|Location1.Y=1162.446mil|Location2.Y=1297.554mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jacob\OneDrive\Avionics\powerPLan9-11\powerPCB_10-11.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3914.454mil|Location2.X=4049.562mil|Location1.Y=1162.446mil|Location2.Y=1297.554mil|Absolute=True">Hole Size Constraint: (133.858mil &gt; 100mil) Pad 24VOUT-1(3082.008mil,600mil) on Multi-Layer Actual Hole Size = 133.858mil</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jacob\OneDrive\Avionics\powerPLan9-11\powerPCB_10-11.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3632.446mil|Location2.X=3767.554mil|Location1.Y=1162.446mil|Location2.Y=1297.554mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jacob\OneDrive\Avionics\powerPLan9-11\powerPCB_10-11.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3632.446mil|Location2.X=3767.554mil|Location1.Y=1162.446mil|Location2.Y=1297.554mil|Absolute=True">Hole Size Constraint: (133.858mil &gt; 100mil) Pad 24VOUT-2(2800mil,600mil) on Multi-Layer Actual Hole Size = 133.858mil</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jacob\OneDrive\Avionics\powerPLan9-11\powerPCB_10-11.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3219.454mil|Location2.X=3354.562mil|Location1.Y=1161.225mil|Location2.Y=1296.334mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jacob\OneDrive\Avionics\powerPLan9-11\powerPCB_10-11.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3219.454mil|Location2.X=3354.562mil|Location1.Y=1161.225mil|Location2.Y=1296.334mil|Absolute=True">Hole Size Constraint: (133.858mil &gt; 100mil) Pad BASE-1(2387.008mil,598.779mil) on Multi-Layer Actual Hole Size = 133.858mil</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jacob\OneDrive\Avionics\powerPLan9-11\powerPCB_10-11.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2937.446mil|Location2.X=3072.554mil|Location1.Y=1161.225mil|Location2.Y=1296.334mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jacob\OneDrive\Avionics\powerPLan9-11\powerPCB_10-11.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2937.446mil|Location2.X=3072.554mil|Location1.Y=1161.225mil|Location2.Y=1296.334mil|Absolute=True">Hole Size Constraint: (133.858mil &gt; 100mil) Pad BASE-2(2105mil,598.779mil) on Multi-Layer Actual Hole Size = 133.858mil</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jacob\OneDrive\Avionics\powerPLan9-11\powerPCB_10-11.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3219.454mil|Location2.X=3354.562mil|Location1.Y=1566.225mil|Location2.Y=1701.334mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jacob\OneDrive\Avionics\powerPLan9-11\powerPCB_10-11.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3219.454mil|Location2.X=3354.562mil|Location1.Y=1566.225mil|Location2.Y=1701.334mil|Absolute=True">Hole Size Constraint: (133.858mil &gt; 100mil) Pad BATT-1(2387.008mil,1003.779mil) on Multi-Layer Actual Hole Size = 133.858mil</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jacob\OneDrive\Avionics\powerPLan9-11\powerPCB_10-11.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2937.446mil|Location2.X=3072.554mil|Location1.Y=1566.225mil|Location2.Y=1701.334mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jacob\OneDrive\Avionics\powerPLan9-11\powerPCB_10-11.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2937.446mil|Location2.X=3072.554mil|Location1.Y=1566.225mil|Location2.Y=1701.334mil|Absolute=True">Hole Size Constraint: (133.858mil &gt; 100mil) Pad BATT-2(2105mil,1003.779mil) on Multi-Layer Actual Hole Size = 133.858mil</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jacob\OneDrive\Avionics\powerPLan9-11\powerPCB_10-11.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2516.375mil|Location2.X=2643.625mil|Location1.Y=4886.375mil|Location2.Y=5013.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jacob\OneDrive\Avionics\powerPLan9-11\powerPCB_10-11.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2516.375mil|Location2.X=2643.625mil|Location1.Y=4886.375mil|Location2.Y=5013.625mil|Absolute=True">Hole Size Constraint: (126mil &gt; 100mil) Pad Free-10(1680mil,4320mil) on Multi-Layer Actual Hole Size = 126mil</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jacob\OneDrive\Avionics\powerPLan9-11\powerPCB_10-11.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3821.375mil|Location2.X=3948.625mil|Location1.Y=701.375mil|Location2.Y=828.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jacob\OneDrive\Avionics\powerPLan9-11\powerPCB_10-11.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3821.375mil|Location2.X=3948.625mil|Location1.Y=701.375mil|Location2.Y=828.625mil|Absolute=True">Hole Size Constraint: (126mil &gt; 100mil) Pad Free-3(2985mil,135mil) on Multi-Layer Actual Hole Size = 126mil</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jacob\OneDrive\Avionics\powerPLan9-11\powerPCB_10-11.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3821.375mil|Location2.X=3948.625mil|Location1.Y=4886.375mil|Location2.Y=5013.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jacob\OneDrive\Avionics\powerPLan9-11\powerPCB_10-11.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3821.375mil|Location2.X=3948.625mil|Location1.Y=4886.375mil|Location2.Y=5013.625mil|Absolute=True">Hole Size Constraint: (126mil &gt; 100mil) Pad Free-4(2985mil,4320mil) on Multi-Layer Actual Hole Size = 126mil</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jacob\OneDrive\Avionics\powerPLan9-11\powerPCB_10-11.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1206.375mil|Location2.X=1333.625mil|Location1.Y=4886.375mil|Location2.Y=5013.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jacob\OneDrive\Avionics\powerPLan9-11\powerPCB_10-11.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1206.375mil|Location2.X=1333.625mil|Location1.Y=4886.375mil|Location2.Y=5013.625mil|Absolute=True">Hole Size Constraint: (126mil &gt; 100mil) Pad Free-5(370mil,4320mil) on Multi-Layer Actual Hole Size = 126mil</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jacob\OneDrive\Avionics\powerPLan9-11\powerPCB_10-11.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2516.375mil|Location2.X=2643.625mil|Location1.Y=701.375mil|Location2.Y=828.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jacob\OneDrive\Avionics\powerPLan9-11\powerPCB_10-11.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2516.375mil|Location2.X=2643.625mil|Location1.Y=701.375mil|Location2.Y=828.625mil|Absolute=True">Hole Size Constraint: (126mil &gt; 100mil) Pad Free-6(1680mil,135mil) on Multi-Layer Actual Hole Size = 126mil</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jacob\OneDrive\Avionics\powerPLan9-11\powerPCB_10-11.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1206.375mil|Location2.X=1333.625mil|Location1.Y=701.375mil|Location2.Y=828.625mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jacob\OneDrive\Avionics\powerPLan9-11\powerPCB_10-11.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1206.375mil|Location2.X=1333.625mil|Location1.Y=701.375mil|Location2.Y=828.625mil|Absolute=True">Hole Size Constraint: (126mil &gt; 100mil) Pad Free-6(370mil,135mil) on Multi-Layer Actual Hole Size = 126mil</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jacob\OneDrive\Avionics\powerPLan9-11\powerPCB_10-11.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1933.95mil|Location2.X=2069.751mil|Location1.Y=4382.099mil|Location2.Y=4517.901mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jacob\OneDrive\Avionics\powerPLan9-11\powerPCB_10-11.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1933.95mil|Location2.X=2069.751mil|Location1.Y=4382.099mil|Location2.Y=4517.901mil|Absolute=True">Hole Size Constraint: (134.551mil &gt; 100mil) Pad K1-2(1101.85mil,3820mil) on Multi-Layer Actual Hole Size = 134.551mil</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jacob\OneDrive\Avionics\powerPLan9-11\powerPCB_10-11.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1933.95mil|Location2.X=2069.751mil|Location1.Y=3941.155mil|Location2.Y=4076.956mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jacob\OneDrive\Avionics\powerPLan9-11\powerPCB_10-11.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1933.95mil|Location2.X=2069.751mil|Location1.Y=3941.155mil|Location2.Y=4076.956mil|Absolute=True">Hole Size Constraint: (134.551mil &gt; 100mil) Pad K1-4(1101.85mil,3379.055mil) on Multi-Layer Actual Hole Size = 134.551mil</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jacob\OneDrive\Avionics\powerPLan9-11\powerPCB_10-11.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1933.95mil|Location2.X=2069.751mil|Location1.Y=3374.225mil|Location2.Y=3510.027mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jacob\OneDrive\Avionics\powerPLan9-11\powerPCB_10-11.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1933.95mil|Location2.X=2069.751mil|Location1.Y=3374.225mil|Location2.Y=3510.027mil|Absolute=True">Hole Size Constraint: (134.551mil &gt; 100mil) Pad K1-6(1101.85mil,2812.126mil) on Multi-Layer Actual Hole Size = 134.551mil</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jacob\OneDrive\Avionics\powerPLan9-11\powerPCB_10-11.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1933.95mil|Location2.X=2069.751mil|Location1.Y=2933.28mil|Location2.Y=3069.082mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jacob\OneDrive\Avionics\powerPLan9-11\powerPCB_10-11.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1933.95mil|Location2.X=2069.751mil|Location1.Y=2933.28mil|Location2.Y=3069.082mil|Absolute=True">Hole Size Constraint: (134.551mil &gt; 100mil) Pad K1-8(1101.85mil,2371.181mil) on Multi-Layer Actual Hole Size = 134.551mil</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jacob\OneDrive\Avionics\powerPLan9-11\powerPCB_10-11.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1237.099mil|Location2.X=1372.901mil|Location1.Y=4382.099mil|Location2.Y=4517.901mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jacob\OneDrive\Avionics\powerPLan9-11\powerPCB_10-11.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1237.099mil|Location2.X=1372.901mil|Location1.Y=4382.099mil|Location2.Y=4517.901mil|Absolute=True">Hole Size Constraint: (134.551mil &gt; 100mil) Pad K1-A0(405mil,3820mil) on Multi-Layer Actual Hole Size = 134.551mil</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jacob\OneDrive\Avionics\powerPLan9-11\powerPCB_10-11.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1237.099mil|Location2.X=1372.901mil|Location1.Y=2933.28mil|Location2.Y=3069.082mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jacob\OneDrive\Avionics\powerPLan9-11\powerPCB_10-11.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1237.099mil|Location2.X=1372.901mil|Location1.Y=2933.28mil|Location2.Y=3069.082mil|Absolute=True">Hole Size Constraint: (134.551mil &gt; 100mil) Pad K1-A1(405mil,2371.181mil) on Multi-Layer Actual Hole Size = 134.551mil</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDBV4QCZG41QPFF1PHLZMVO0VGOHGKNMCX3IIZZZDRXA0YSZTTJGGE"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Silk To Solder Mask (Clearance=10mil) (IsPad),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jacob\OneDrive\Avionics\powerPLan9-11\powerPCB_10-11.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3629.563mil|Location2.X=3637.23mil|Location1.Y=1150.987mil|Location2.Y=1158.653mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jacob\OneDrive\Avionics\powerPLan9-11\powerPCB_10-11.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3629.563mil|Location2.X=3637.23mil|Location1.Y=1150.987mil|Location2.Y=1158.653mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 10mil) Between Pad 24VOUT-2(2800mil,600mil) on Multi-Layer And Track (2506.22mil,295mil)(2800mil,588.779mil) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jacob\OneDrive\Avionics\powerPLan9-11\powerPCB_10-11.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2908.396mil|Location2.X=2919.646mil|Location1.Y=1264.988mil|Location2.Y=1276.238mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jacob\OneDrive\Avionics\powerPLan9-11\powerPCB_10-11.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2908.396mil|Location2.X=2919.646mil|Location1.Y=1264.988mil|Location2.Y=1276.238mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (1.731mil &lt; 10mil) Between Pad BASE-2(2105mil,598.779mil) on Multi-Layer And Track (1795mil,875mil)(2071.22mil,598.779mil) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [1.731mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jacob\OneDrive\Avionics\powerPLan9-11\powerPCB_10-11.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3072.299mil|Location2.X=3079.966mil|Location1.Y=1697.299mil|Location2.Y=1704.966mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jacob\OneDrive\Avionics\powerPLan9-11\powerPCB_10-11.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3072.299mil|Location2.X=3079.966mil|Location1.Y=1697.299mil|Location2.Y=1704.966mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 10mil) Between Pad BATT-2(2105mil,1003.779mil) on Multi-Layer And Track (2115mil,1010mil)(2505mil,1400mil) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jacob\OneDrive\Avionics\powerPLan9-11\powerPCB_10-11.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2094.986mil|Location2.X=2106.236mil|Location1.Y=1571.262mil|Location2.Y=1582.512mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jacob\OneDrive\Avionics\powerPLan9-11\powerPCB_10-11.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2094.986mil|Location2.X=2106.236mil|Location1.Y=1571.262mil|Location2.Y=1582.512mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (8.777mil &lt; 10mil) Between Pad FROM-1(1230mil,990mil) on Multi-Layer And Track (1215mil,490mil)(1215mil,990mil) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [8.777mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jacob\OneDrive\Avionics\powerPLan9-11\powerPCB_10-11.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2038.744mil|Location2.X=2049.994mil|Location1.Y=3384.976mil|Location2.Y=3396.226mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jacob\OneDrive\Avionics\powerPLan9-11\powerPCB_10-11.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2038.744mil|Location2.X=2049.994mil|Location1.Y=3384.976mil|Location2.Y=3396.226mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (8.327mil &lt; 10mil) Between Pad K1-6(1101.85mil,2812.126mil) on Multi-Layer And Track (1110mil,2815mil)(1795mil,2130mil) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [8.327mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jacob\OneDrive\Avionics\powerPLan9-11\powerPCB_10-11.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3145.629mil|Location2.X=3156.879mil|Location1.Y=3787.784mil|Location2.Y=3799.034mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jacob\OneDrive\Avionics\powerPLan9-11\powerPCB_10-11.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3145.629mil|Location2.X=3156.879mil|Location1.Y=3787.784mil|Location2.Y=3799.034mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (9.337mil &lt; 10mil) Between Pad K2-3(2255mil,3230mil) on Multi-Layer And Track (1734.134mil,3156.772mil)(2875.866mil,3156.772mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [9.337mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jacob\OneDrive\Avionics\powerPLan9-11\powerPCB_10-11.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3171.739mil|Location2.X=3182.989mil|Location1.Y=3824.476mil|Location2.Y=3835.726mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jacob\OneDrive\Avionics\powerPLan9-11\powerPCB_10-11.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3171.739mil|Location2.X=3182.989mil|Location1.Y=3824.476mil|Location2.Y=3835.726mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (9.799mil &lt; 10mil) Between Pad K2-3(2255mil,3230mil) on Multi-Layer And Track (2270mil,3215mil)(2295mil,3215mil) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [9.799mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jacob\OneDrive\Avionics\powerPLan9-11\powerPCB_10-11.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3182.308mil|Location2.X=3193.558mil|Location1.Y=3828.958mil|Location2.Y=3840.208mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jacob\OneDrive\Avionics\powerPLan9-11\powerPCB_10-11.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3182.308mil|Location2.X=3193.558mil|Location1.Y=3828.958mil|Location2.Y=3840.208mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (4.727mil &lt; 10mil) Between Pad K2-3(2255mil,3230mil) on Multi-Layer And Track (2295mil,3215mil)(2505mil,3005mil) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [4.727mil]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\Jacob\OneDrive\Avionics\powerPLan9-11\powerPCB_10-11.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2745.629mil|Location2.X=2756.879mil|Location1.Y=4620.966mil|Location2.Y=4632.216mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\Jacob\OneDrive\Avionics\powerPLan9-11\powerPCB_10-11.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2745.629mil|Location2.X=2756.879mil|Location1.Y=4620.966mil|Location2.Y=4632.216mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (9.337mil &lt; 10mil) Between Pad K2-5(1855mil,3930mil) on Multi-Layer And Track (1734.134mil,4003.228mil)(2875.866mil,4003.228mil) on Top Overlay [Top Overlay] to [Top Solder] clearance [9.337mil]</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>
